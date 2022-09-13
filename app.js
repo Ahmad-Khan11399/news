@@ -11,6 +11,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 //The public folder which holds the CSS
 app.use(express.static("public"));
+//ae037b92b9e557f21437c6b689ebe140-us9
 //Listening on port 3000 and if it goes well then logging a message saying that the server is running
 app.listen(process.env.PORT ||3000,function () {
  console.log("Server is running at port 3000");
@@ -22,7 +23,7 @@ app.get("/", function (req, res) {
 //Setting up MailChimp
 mailchimp.setConfig({
 //*****************************ENTER YOUR API KEY HERE******************************
- apiKey: "ae037b92b9e557f21437c6b689ebe14-us9",
+ apiKey: "ae037b92b9e557f21437c6b689ebe140-us9",
 //*****************************ENTER YOUR API KEY PREFIX HERE i.e.THE SERVER******************************
  server: "us9"
 });
